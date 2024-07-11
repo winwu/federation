@@ -14,5 +14,9 @@
   "bugs": {
     "url": "https://github.com/winwu/federation/issues"
   },
-  "homepage": "https://github.com/winwu/federation#readme"
+  "homepage": "https://github.com/winwu/federation#readme",
+  "workspaces": [
+    "packages/app1",
+    "packages/app2"
+  ]
 }
