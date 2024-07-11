@@ -1,11 +1,36 @@
 {
   "name": "app1",
   "version": "1.0.0",
-  "description": "",
+  "description": "Act as the app shell and an aggregation portal with other remote (app2)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve",
+    "build": "webpack --mode production"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react": "~18.3.x",
+    "react-dom": "~18.3.x",
+    "react-router-dom": "~6.24.x"
+  },
+  "devDependencies": {
+    "@types/eslint": "~8.56.x",
+    "@types/react": "~18.3.x",
+    "@types/react-dom": "~18.3.x",
+    "@typescript-eslint/eslint-plugin": "~6.21.x",
+    "@typescript-eslint/parser": "~6.21.x",
+    "css-loader": "~7.1.x",
+    "esbuild-loader": "~4.2.x",
+    "eslint": "~8.57.x",
+    "eslint-config-prettier": "~9.1.x",
+    "eslint-plugin-prettier": "~5.1.x",
+    "eslint-plugin-react": "~7.34.x",
+    "eslint-plugin-react-hooks": "~4.6.x",
+    "html-webpack-plugin": "~5.6.x",
+    "mini-css-extract-plugin": "~2.9.x",
+    "webpack": "~5.92.x",
+    "webpack-cli": "~5.1.x",
+    "webpack-dev-server": "~5.0.x"
+  }
 }
