@@ -1,0 +1,18 @@
+{
+  "name": "federation-project",
+  "version": "1.0.0",
+  "engines": {
+    "npm": ">=9.5.0",
+    "node": ">=18.14.2"
+  },
+  "private": true,
+  "description": "a micro frontend application",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winwu/federation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/winwu/federation/issues"
+  },
+  "homepage": "https://github.com/winwu/federation#readme"
+}
