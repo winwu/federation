@@ -18,5 +18,8 @@
   "workspaces": [
     "packages/app1",
     "packages/app2"
-  ]
+  ],
+  "devDependencies": {
+    "prettier": "~3.3.x"
+  }
 }
