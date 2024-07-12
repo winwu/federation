@@ -17,7 +17,8 @@
   "homepage": "https://github.com/winwu/federation#readme",
   "workspaces": [
     "packages/app1",
-    "packages/app2"
+    "packages/app2",
+    "shared/components"
   ],
   "devDependencies": {
     "prettier": "~3.3.x"
