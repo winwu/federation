@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Navigate, RouteObject, useRoutes } from 'react-router-dom';
-import App from './App';
-import Layout from './Layout';
+import App from './pages/App';
+import Layout from './components/Layout';
 import './Main.css';
 
 const routes: RouteObject[] = [
@@ -27,7 +27,7 @@ const routes: RouteObject[] = [
 const Main = () => {
     const element = useRoutes(routes);
 
-    return <div>{element}</div>;
+    return <div id="app-wrapper">{element}</div>;
 };
 
 export default Main;

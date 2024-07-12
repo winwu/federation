@@ -1,0 +1,42 @@
+nav {
+    display: flex;
+    background: #293774;
+    margin: 0;
+    padding: 10px 15px;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inherit;
+}
+
+nav ul li a {
+    color: #ffdd00;
+    text-decoration: none;
+    padding: 10px 15px;
+    min-width: 60px;
+    text-align: center;
+}
+
+nav ul li a.active {
+    background: #ffdd00;
+    color: #293774;
+}
+
+nav ul li a:hover {
+    background: #ffdd00;
+    color: #293774;
+}
+
+main {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}

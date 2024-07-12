@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
+import './Layout.css';
 
 function Layout() {
     return (
@@ -7,14 +8,16 @@ function Layout() {
             <nav>
                 <ul>
                     <li>
-                        <Link to="/app1">App1</Link>
+                        <NavLink to="/app1">App1</NavLink>
                     </li>
                     <li>
-                        <Link to="/app2">App2</Link>
+                        <NavLink to="/app2">App2</NavLink>
                     </li>
                 </ul>
             </nav>
-            <Outlet />
+            <main>
+                <Outlet />
+            </main>
         </>
     );
 }
