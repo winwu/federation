@@ -1,10 +1,24 @@
 {
-  "name": "components",
+  "name": "shared-components",
   "version": "1.0.0",
-  "description": "shared components",
-  "devDependencies": {},
+  "description": "shared component libraries",
+  "dependencies": {
+    "react": "~18.3.x",
+    "react-dom": "~18.3.x",
+    "react-router-dom": "~6.24.x"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "~5.6.x",
+    "mini-css-extract-plugin": "~2.9.x",
+    "webpack": "~5.92.x",
+    "webpack-cli": "~5.1.x",
+    "css-loader": "~7.1.x",
+    "esbuild-loader": "~4.2.x",
+    "webpack-dev-server": "~5.0.x"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
