@@ -3,6 +3,8 @@
         "sourceMap": true,
         "jsx": "react",
         "target": "ES6",
+        // support lazy load "import"
+        "module": "esnext",
         "allowSyntheticDefaultImports": true,
         "moduleResolution": "node"
     }

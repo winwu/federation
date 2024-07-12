@@ -1,5 +1,5 @@
-import CustomButton from "./Button";
-import CustomLabel from "./Label";
+import CustomButton from "./CustomButton";
+import CustomLabel from "./CustomLabel";
 
 const Shared = {
     Button: CustomButton,

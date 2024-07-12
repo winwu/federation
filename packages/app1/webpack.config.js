@@ -1,6 +1,7 @@
 const { EsbuildPlugin } = require('esbuild-loader');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { ModuleFederationPlugin } = require('webpack').container;
 const path = require('path');
 
 module.exports = {
@@ -37,6 +38,12 @@ module.exports = {
         ],
     },
     plugins: [
+        new ModuleFederationPlugin({
+            name: 'app1',
+            remotes: {
+                shared: 'shared@http://localhost:3003/remoteEntry.js',
+            },
+        }),
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
             title: 'App 1',
