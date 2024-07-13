@@ -1,10 +1,9 @@
-import * as React from 'react';
+import React from 'react';
 
-const CustomButton = () => {
+const CustomButton = (props: React.PropsWithChildren<{ id: string; onClick: React.MouseEventHandler<HTMLButtonElement> }>) => {
+
     return (
-        <button onClick={(e) => {
-            e.preventDefault();
-        }}>This is a Custom button</button>
+        <button id={props.id} onClick={props.onClick}>{props.children}</button>
     )
 }
 export default CustomButton;

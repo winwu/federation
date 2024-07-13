@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-const CustomLabel = () => {
+const CustomLabel = (props: React.PropsWithChildren<{htmlFor?: string}>) => {
     return (
-        <label>This is a custom label</label>
+        <label {...(props?.htmlFor ? {htmlFor: props.htmlFor} : {})}>{props.children}</label>
     )
 }
 

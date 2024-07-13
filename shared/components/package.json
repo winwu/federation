@@ -2,6 +2,10 @@
   "name": "shared-components",
   "version": "1.0.0",
   "description": "shared component libraries",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack --mode production"
+  },
   "dependencies": {
     "react": "~18.3.x",
     "react-dom": "~18.3.x",
@@ -15,19 +19,5 @@
     "css-loader": "~7.1.x",
     "esbuild-loader": "~4.2.x",
     "webpack-dev-server": "~5.0.x"
-  },
-  "scripts": {
-    "start": "webpack serve",
-    "build": "webpack --mode production"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/winwu/federation.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/winwu/federation/issues"
-  },
-  "homepage": "https://github.com/winwu/federation#readme"
+  }
 }
