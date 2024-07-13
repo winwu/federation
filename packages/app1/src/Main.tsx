@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Navigate, RouteObject, useRoutes } from 'react-router-dom';
-import App from './pages/App';
+import Counter from './features/counter/Counter';
 import Layout from './components/Layout';
 import './Main.css';
 
@@ -12,7 +12,7 @@ const routes: RouteObject[] = [
             { index: true, element: <Navigate to="app1" replace /> },
             {
                 path: 'app1',
-                element: <App />,
+                element: <Counter />,
             },
             {
                 path: 'app2',

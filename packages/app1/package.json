@@ -2,16 +2,17 @@
   "name": "app1",
   "version": "1.0.0",
   "description": "Act as the app shell and an aggregation portal with other remote (app2)",
-  "main": "index.js",
+  "private": true,
+  "main": "dist/main.js",
   "scripts": {
     "start": "webpack serve",
     "build": "webpack --mode production"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "@reduxjs/toolkit": "~2.2.x",
     "react": "~18.3.x",
     "react-dom": "~18.3.x",
+    "react-redux": "~9.1.x",
     "react-router-dom": "~6.24.x"
   },
   "devDependencies": {
