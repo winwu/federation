@@ -3,4 +3,3 @@
 // to solve this issue add the following:
 
 declare module 'app2/*';
-declare module 'shared/*';

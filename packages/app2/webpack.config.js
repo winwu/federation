@@ -67,9 +67,9 @@ module.exports = {
                     requiredVersion: dependencies['react-redux'],
                 },
             },
-            remotes: {
-                shared: 'shared@http://localhost:3003/remoteEntry.js',
-            },
+            // remotes: {
+            //     shared: 'shared@http://localhost:3003/remoteEntry.js',
+            // },
         }),
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({

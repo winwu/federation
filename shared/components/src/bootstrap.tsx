@@ -8,13 +8,13 @@ root.render(
     <React.StrictMode>
         <h1>Welcome to shared component library</h1>
         <div>
-            <Shared.Button onClick={(e) => {
+            <Shared.Button id="a-btn" onClick={(e) => {
                 e.preventDefault();
                 alert('hello!');
             }}>This is a button</Shared.Button>
         </div>
         <div>
-            <Shared.Label htmlFor=''>This is label</Shared.Label>
+            <Shared.Label htmlFor='a-btn'>This is label</Shared.Label>
         </div>
     </React.StrictMode>,
 );

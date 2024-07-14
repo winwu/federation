@@ -1,7 +1,6 @@
 const { EsbuildPlugin } = require('esbuild-loader');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { ModuleFederationPlugin } = require("webpack").container;
 const path = require('path');
 
 const DEV_SERVER_PORT = 3003;
@@ -14,12 +13,12 @@ module.exports = {
         static: path.join(__dirname, 'dist'),
         port: DEV_SERVER_PORT,
         historyApiFallback: true,
-        headers: {
-            // resolve webpack dev server CORS issue as reqeust from 3001 or 3002
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
-            'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
-        },
+        // headers: {
+        //     // resolve webpack dev server CORS issue as reqeust from 3001 or 3002
+        //     'Access-Control-Allow-Origin': '*',
+        //     'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+        //     'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
+        // },
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js', '.css', '.json'],
@@ -46,14 +45,14 @@ module.exports = {
         ],
     },
     plugins: [
-        new ModuleFederationPlugin({
+        /* new ModuleFederationPlugin({
             name: "shared",
             filename: "remoteEntry.js",
             exposes: {
               "./CustomButton": "./src/CustomButton.tsx",
               "./CustomLabel": "./src/CustomLabel.tsx",
             },
-        }),
+        }), */
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
             title: 'shared component',
