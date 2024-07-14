@@ -5,9 +5,11 @@ import Counter from './features/counter';
 import './Main.css';
 
 const Main = () => {
-    return <Provider store={store}>
-        <Counter />
-    </Provider>;
+    return (
+        <Provider store={store}>
+            <Counter />
+        </Provider>
+    );
 };
 
 export default Main;
