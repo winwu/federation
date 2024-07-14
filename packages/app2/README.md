@@ -2,7 +2,7 @@
 
 ## Installation
 
-```console
+```bash
 // install all packages defined in package.json
 npm i
 ```

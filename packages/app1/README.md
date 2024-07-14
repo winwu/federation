@@ -4,7 +4,7 @@ Act as the app shell and an aggregation portal with other remote (app2)
 
 ## Installation
 
-```console
+```bash
 // install all packages defined in package.json
 npm i
 ```

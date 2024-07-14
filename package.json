@@ -1,26 +1,22 @@
 {
   "name": "federation-project",
-  "version": "1.0.0",
   "engines": {
     "npm": ">=9.5.0",
     "node": ">=18.14.2"
   },
   "private": true,
   "description": "a micro frontend application",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/winwu/federation.git"
+  "scripts": {
+    "start": "lerna run --parallel start",
+    "build": "lerna run build"
   },
-  "bugs": {
-    "url": "https://github.com/winwu/federation/issues"
+  "devDependencies": {
+    "prettier": "~3.3.x",
+    "lerna": "8.1.6"
   },
-  "homepage": "https://github.com/winwu/federation#readme",
   "workspaces": [
     "packages/app1",
     "packages/app2",
     "shared/components"
-  ],
-  "devDependencies": {
-    "prettier": "~3.3.x"
-  }
+  ]
 }
