@@ -1,6 +1,6 @@
 {
   "name": "shared-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "shared component libraries",
   "scripts": {
     "start": "webpack serve",
@@ -12,12 +12,12 @@
     "react-router-dom": "~6.24.x"
   },
   "devDependencies": {
+    "css-loader": "~7.1.x",
+    "esbuild-loader": "~4.2.x",
     "html-webpack-plugin": "~5.6.x",
     "mini-css-extract-plugin": "~2.9.x",
     "webpack": "~5.92.x",
     "webpack-cli": "~5.1.x",
-    "css-loader": "~7.1.x",
-    "esbuild-loader": "~4.2.x",
     "webpack-dev-server": "~5.0.x"
   }
 }
