@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { Navigate, RouteObject, useRoutes } from 'react-router-dom';
-import Counter from './features/counter/Counter';
+import SyncCounter from './features/syncCounter';
+import AsyncCounter from './features/asyncCounter/index';
 import Layout from './components/Layout';
+
 import './Main.css';
 
 const routes: RouteObject[] = [
@@ -12,11 +14,11 @@ const routes: RouteObject[] = [
             { index: true, element: <Navigate to="app1" replace /> },
             {
                 path: 'app1',
-                element: <Counter />,
+                element: <SyncCounter />,
             },
             {
                 path: 'app2',
-                element: <div>app2 home</div>,
+                element: <AsyncCounter />,
             },
         ],
     },

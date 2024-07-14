@@ -1,12 +1,13 @@
-import * as React from 'react';
-import Counter from './features/counter/Counter';
+import React from 'react';
+import { Provider } from 'react-redux';
+import { store } from './app/store';
+import Counter from './features/counter';
 import './Main.css';
 
-
 const Main = () => {
-    return <div>
+    return <Provider store={store}>
         <Counter />
-    </div>;
+    </Provider>;
 };
 
 export default Main;

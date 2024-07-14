@@ -3,6 +3,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { ModuleFederationPlugin } = require('webpack').container;
 const path = require('path');
+const { dependencies } = require('./package.json');
+
+const DEV_SERVER_PORT = 3000;
 
 module.exports = {
     entry: './src/index.ts',
@@ -10,7 +13,7 @@ module.exports = {
     mode: 'development',
     devServer: {
         static: path.join(__dirname, 'dist'),
-        port: 3000,
+        port: DEV_SERVER_PORT,
         historyApiFallback: true,
     },
     resolve: {
@@ -41,7 +44,27 @@ module.exports = {
         new ModuleFederationPlugin({
             name: 'app1',
             remotes: {
+                app2: 'app2@http://localhost:3001/remoteEntry.js',
                 shared: 'shared@http://localhost:3003/remoteEntry.js',
+            },
+            shared: {
+                ...dependencies,
+                react: {
+                    singleton: true,
+                    requiredVersion: dependencies.react,
+                },
+                'react-dom': {
+                    singleton: true,
+                    requiredVersion: dependencies['react-dom'],
+                },
+                'react-router-dom': {
+                    singleton: true,
+                    requiredVersion: dependencies['react-router-dom'],
+                },
+                'react-redux': {
+                    singleton: true,
+                    requiredVersion: dependencies['react-redux'],
+                },
             },
         }),
         new MiniCssExtractPlugin(),

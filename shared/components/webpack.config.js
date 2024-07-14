@@ -4,13 +4,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { ModuleFederationPlugin } = require("webpack").container;
 const path = require('path');
 
+const DEV_SERVER_PORT = 3003;
+
 module.exports = {
     entry: './src/index.tsx',
     // @TODO improve it by checking --env
     mode: 'development',
     devServer: {
         static: path.join(__dirname, 'dist'),
-        port: 3003,
+        port: DEV_SERVER_PORT,
         historyApiFallback: true,
         headers: {
             // resolve webpack dev server CORS issue as reqeust from 3001 or 3002

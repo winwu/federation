@@ -6,7 +6,7 @@ import { decrement, increment, selectCount } from './counterSlice';
 const RemoteButton = React.lazy(() => import('shared/CustomButton'));
 const RemoteLabel = React.lazy(() => import('shared/CustomLabel'));
 
-const Counter = () => {
+const SyncCounter = () => {
     const count = useAppSelector(selectCount);
     const dispatch = useAppDispatch();
 
@@ -45,4 +45,4 @@ const Counter = () => {
     );
 };
 
-export default Counter;
+export default SyncCounter;
