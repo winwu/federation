@@ -13,7 +13,8 @@
     "react": "~18.3.x",
     "react-dom": "~18.3.x",
     "react-redux": "~9.1.x",
-    "react-router-dom": "~6.24.x"
+    "react-router-dom": "~6.24.x",
+    "shared-components": "1.0.1"
   },
   "devDependencies": {
     "@types/eslint": "~8.56.x",

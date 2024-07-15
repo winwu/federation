@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Suspense } from 'react';
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
 import { selectCount, incrementAsync, decrementAsync } from './counterSlice';
-import Shared from '../../../../../shared/components/src/Entry';
+import Shared from 'shared-components/src/Entry';
 
 // const Shared.Button = React.lazy(() => import('shared/CustomButton'));
 // const Shared.Label = React.lazy(() => import('shared/CustomLabel'));

@@ -22,3 +22,37 @@ Both `app1` and `app2` are independently deployed apps:
 and `shared-components` is deployed:
 
 - `shared-components`: http://localhost:3003
+
+
+## Local Registry Install and configuration
+
+# Install verdaccio
+
+```
+npm install --global verdaccio
+```
+
+# serve local registry
+
+```
+verdaccio
+```
+
+open http://localhost:4873/
+
+# Set npm registr url
+
+Both way works:
+
+1. set by cli
+
+ `npm config set registry=http://localhost:4873/`
+
+
+2. set by .npmrc
+
+create `.npmrc` file on root folder, add this line 
+
+```
+registry=http://localhost:4873/
+```

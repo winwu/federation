@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
 import { decrement, increment, selectCount } from './counterSlice';
-import Shared from '../../../../../shared/components/src/Entry';
+import Shared from 'shared-components/src/Entry';
 
 // const CustomButton = React.lazy(() => import('shared/CustomButton'));
 // const CustomLabel = React.lazy(() => import('shared/CustomLabel'));
