@@ -12,7 +12,7 @@ const Counter = () => {
     const dispatch = useAppDispatch();
 
     return (
-        <div>
+        <div style={{ textAlign: 'center' }}>
             <h1>Asynchronous Counter</h1>
             <div>{count}</div>
             <section>

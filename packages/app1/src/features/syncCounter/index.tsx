@@ -11,7 +11,7 @@ const SyncCounter = () => {
     const dispatch = useAppDispatch();
 
     return (
-        <div>
+        <div style={{ textAlign: 'center' }}>
             <h1>Synchronize Counter</h1>
             <div>{count}</div>
             <section>
