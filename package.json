@@ -1,5 +1,5 @@
 {
-  "name": "federation-project",
+  "name": "mono-feder-demo-project",
   "engines": {
     "npm": ">=9.5.0",
     "node": ">=18.14.2"
