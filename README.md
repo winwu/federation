@@ -2,7 +2,7 @@
 
 # Introduction
 
-This project demonstrates a micro frontend architecture using Module Federation. It allows independently deployed applications (app1 and app2) to share components dynamically.
+This project demonstrates a monorepo project structure,  using Module Federation to have app2 share components dynamically.
 
 
 # Getting Started
@@ -57,3 +57,5 @@ The applications will be available at:
 <img src="../main/assets/workspace.png?raw=true" width="400">
 
 <img src="../main/assets/app1_app2.jpg?raw=true">
+
+App1 is host; App2 is remote.
