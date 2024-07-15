@@ -1,0 +1,9 @@
+.s-btn {
+    margin: 10px;
+    border: none;
+    min-width: 100px;
+    padding: 10px;
+    background: #fdd46f;
+    font-size: 16px;
+    cursor: pointer;
+}
