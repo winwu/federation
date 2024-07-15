@@ -1,15 +1,16 @@
 import * as React from 'react';
 import { Suspense } from 'react';
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
-import { selectCount, incrementAsync, decrementAsync } from './counterSlice';
+import { asyncIncrement, asyncDecrement } from './counterSlice';
 import Shared from '../../../../../shared/components/src/Entry';
 
 // const Shared.Button = React.lazy(() => import('shared/CustomButton'));
 // const Shared.Label = React.lazy(() => import('shared/CustomLabel'));
 
 const Counter = () => {
-    const count = useAppSelector(selectCount);
     const dispatch = useAppDispatch();
+
+    const { value: count, loading } = useAppSelector((state) => state.counter);
 
     return (
         <div style={{ textAlign: 'center' }}>
@@ -22,7 +23,7 @@ const Counter = () => {
                             id="increment-btn"
                             onClick={(e) => {
                                 e.preventDefault();
-                                dispatch(incrementAsync(1));
+                                dispatch(asyncIncrement());
                             }}
                         >
                             +
@@ -34,7 +35,7 @@ const Counter = () => {
                             id="decrement-btn"
                             onClick={(e) => {
                                 e.preventDefault();
-                                dispatch(decrementAsync(1));
+                                dispatch(asyncDecrement());
                             }}
                         >
                             -
@@ -42,6 +43,8 @@ const Counter = () => {
                     </Shared.Label>
                 </Suspense>
             </section>
+
+            <small>{loading === true && 'Loading'}</small>
         </div>
     );
 };
