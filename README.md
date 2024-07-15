@@ -54,6 +54,6 @@ The applications will be available at:
 - `app2`: Second micro frontend application. app2's feature is a asynchronous counter, mainly implemented by React and Redux.
 - `shared-components`: Shared components. (CustomLabel and CustomButton)
 
-<img src="../master/assets/workspace.png?raw=true" width="400">
+<img src="../main/assets/workspace.png?raw=true" width="400">
 
-<img src="../master/assets/app1_app2.jpg?raw=true">
+<img src="../main/assets/app1_app2.jpg?raw=true">
