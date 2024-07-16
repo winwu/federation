@@ -20,8 +20,8 @@ Please based on the engines in package.json file.
 1. Clone the repo
 
 ```
-git clone https://github.com/winwu/federation.git
-cd federation
+git clone https://github.com/winwu/mono-feder-demo.git
+cd mono-feder-demo
 
 ```
 
